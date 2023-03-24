@@ -5,18 +5,16 @@
 
 #header{
     background-color: #5AA658;
-    height: 100px;
-    width: 100vw;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
 }
 #menu{
-    height: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: end;
-    margin-right: 30px;
-}
-ul{
-    justify-items: center;
+    margin-right: 20px;
 }
 li{
     list-style: none;
@@ -28,12 +26,16 @@ a{
     position: relative;
     padding-bottom: 5px;
 }
+a img{
+    width: 100px;
+    margin: 20px;
+}
 
 #btn-mobile{
     display: none;
     justify-items: end;
 }
-a:before {
+li > a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -47,7 +49,7 @@ a:before {
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
   }
-  a:hover:before {
+  li > a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
