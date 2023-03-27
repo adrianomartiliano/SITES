@@ -1,8 +1,19 @@
 @media (max-width: 780px){
 
     #menu{
-        display: none;
+        width: 100%;
         position: absolute;
+        display: block;
+        transition: .6s;
+        z-index: 100;
+        visibility: hidden;
+        overflow-y: hidden;
+        background-color: #5AA658;
+    }
+    #nav.active #menu{
+        visibility: visible;
+        overflow-y: auto;
+        height: calc(100vh - 70px);
     }
     #btn-mobile{
         display: flex;
