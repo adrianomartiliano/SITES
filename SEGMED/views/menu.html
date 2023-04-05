@@ -14,8 +14,6 @@
                 <span id="icon-login">
                     <ion-icon name="person-circle-outline" id="menu-login"></ion-icon>
                 </span>
-                    
-                    <!-- <img id="menu-login" src="../SEGMED/images/icons/menu-login.svg" alt=""> -->
             </button>
             <button id="btn-mobile">
                 <span id="hamburger"></span>
@@ -46,6 +44,20 @@
 
     btnmobile.addEventListener('click', toggleMenu);
     btnmobile.addEventListener('touchstart', toggleMenu);
+
+
+</script>
+<script>
+    const BtnLogin = document.getElementById('btn-login');
+
+    function toggleMenu(event){
+        if(event.type === 'touchstart') event.preventDefault(); 
+        const nav = document.getElementById('nav');
+        nav.classList.toggle('active');
+    }
+
+    BtnLogin.addEventListener('click', toggleMenu);
+    BtnLogin.addEventListener('touchstart', toggleMenu);
 
 
 </script>
