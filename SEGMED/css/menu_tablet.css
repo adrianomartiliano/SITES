@@ -47,8 +47,9 @@
         background: none;
         border: none;
     }
-    #icon-login{
-        width: 40px;
+    #menu-login{
+        width: 30px;
+        height: 30px;
         color: white;
     }
 
