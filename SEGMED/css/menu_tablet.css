@@ -43,6 +43,7 @@
     }
 
     #btn-login{
+        display: flex;
         margin-right: 10px;
         background: none;
         border: none;

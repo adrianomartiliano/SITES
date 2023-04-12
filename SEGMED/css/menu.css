@@ -35,6 +35,11 @@ a img{
     display: none;
     justify-items: end;
 }
+#btn-login{
+    display: none;
+    justify-items: end;
+}
+
 li > a:before {
     content: "";
     position: absolute;
