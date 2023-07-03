@@ -1,9 +1,9 @@
-import {BrowserRouter, Routes, Route} from "react" //Roteamento de links
-import Titulo from "./Titulo";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import Lista from './Lista'
 
-function App(){
-  return <Titulo />
-}
-
-export default App
-np
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Lista />
+  </React.StrictMode>,
+)
