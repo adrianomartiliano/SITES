@@ -13,13 +13,46 @@ function Lista(){
 
             <div className="ListaTarefas">
                 <div className="item">
-                    <span>Tarefa de exemplo</span>
-                    <button>Exluir</button>
+                    <span className="tarefaAtiva">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
                 </div>
                 <div className="item">
-                    <span>Tarefa de exemplo</span>
-                    <button>Exluir</button>
+                    <span className="tarefaAtiva">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
                 </div>
+                <div className="item">
+                    <span className="tarefaAtiva">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
+                </div>
+                <div className="item">
+                    <span className="tarefaAtiva">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
+                </div>
+                <div className="item">
+                    <span className="tarefaAtiva">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
+                </div>
+                <div className="item">
+                    <span className="tarefaAtiva">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
+                </div>
+                <div className="item">
+                    <span className="tarefaAtiva">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
+                </div>
+                <div className="item">
+                    <span className="tarefaFeita">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
+                </div>
+                <div className="item">
+                    <span className="tarefaFeita">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
+                </div>
+                <div className="item">
+                    <span className="tarefaFeita">Tarefa de exemplo</span>
+                    <button className="btnExcluir">Exluir</button>
+                </div>
+                <button className="btnDeleteAll">Deletar Todas</button>
             </div>
         </div>
     )
