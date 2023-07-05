@@ -9,7 +9,7 @@
 
 
 h1{
-    color: gray;
+    color: rgb(223, 223, 223);
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -43,16 +43,16 @@ button.btnAdd{
 }
 button.btnExcluir{
     border: none;
-    background-color: rgb(202, 87, 87);
+    background-color: rgb(202, 87, 87) !important;
     border-radius: 10px;
     cursor: pointer;
+    color: whi;
 
 }
-button.btnAdd:hover{
-    background-color: rgb(199, 193, 193);
-    transition: 0.5s;
-
+button.btnAdd img{
+    width: 35px;
 }
+
 button.btnDeleteAll{
     color: rgb(223, 223, 223);
     cursor: pointer;
