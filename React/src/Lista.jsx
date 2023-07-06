@@ -10,7 +10,7 @@ function Lista(){
     const [lista, setLista] = useState([]);
 
     //Pegará o valor digitado, vai colocar na lista e vai limpar esse campo
-    const [novoItem, setNovoItem] = useState([]);
+    const [novoItem, setNovoItem] = useState("");
 
 
     function adicionaItem(form){
@@ -31,44 +31,25 @@ function Lista(){
                 <input 
                     type="text" 
                     value={novoItem}
-                    onChange={ (a) => { setNovoItem (a.target.value)}}
+                    onChange={ (e) => { setNovoItem (e.target.value)}}
                     id="input-entrada"
                 />
                 <button className="btnAdd"><img src={iconAdd} alt="" /></button>
             </form>
 
             <div className="ListaTarefas">
-                {/* {
-                    lista.length > 1 ?
-                        <h3>Lista vazia</h3>
-                    : 
-                    <div className="item">
-                    <span className="tarefaAtiva">Tarefa de exemplo</span>
-                    <button className="btnExcluir">Exluir</button>
-                    </div>
-                } */}
-                <div className="item">
-                    <span className="tarefaAtiva">Tarefa de exemplo</span>
-                    <button className="btnExcluir"><img src={iconDel} alt="" /></button>
-                </div>
-                <div className="item">
-                    <span className="tarefaAtiva">Tarefa de exemplo</span>
-                    <button className="btnExcluir"><img src={iconDel} alt="" /></button>
-                </div>
-                <div className="item">
-                    <span className="tarefaAtiva">Tarefa de exemplo</span>
-                    <button className="btnExcluir"><img src={iconDel} alt="" /></button>
-                </div>
-                <div className="item">
-                    <span className="tarefaAtiva">Tarefa de exemplo</span>
-                    <button className="btnExcluir"><img src={iconDel} alt="" /></button>
-                </div>
-                
-                <div className="item">
-                    <span className="tarefaFeita">Tarefa de exemplo</span>
-                    <button className="btnExcluir"><img src={iconDel} alt="" /></button>
-                </div>
-                
+                {
+                    lista.length < 1 
+                    ?
+                        <h1>Lista Vazia</h1>
+                    :
+                        lista.map((item, index)=>(
+                            <div className="item">
+                            <span className="tarefaAtiva">{item.text}</span>
+                            <button className="btnExcluir">Exluir</button>
+                            </div>
+                        ))}
+              
                 <button className="btnDeleteAll">Deletar Todas</button>
             </div>
         </div>
